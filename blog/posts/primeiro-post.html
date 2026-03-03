@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Olá, mundo! — por que criei este blog e o que esperar por aqui. Wagner Bocchi." />
+  <title>Olá, mundo! | Blog — Wagner Bocchi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════ -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="../../" class="nav-brand">
+      <span style="color:var(--text-dim)">~$</span> wagner@bocchi<span class="cursor" style="width:7px;height:13px;"></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../../"><span class="prefix">~/</span>home</a></li>
+      <li><a href="../../blog/" class="active"><span class="prefix">~/</span>blog</a></li>
+      <li><a href="https://github.com/wagnerbocchi" target="_blank" rel="noopener noreferrer"><span class="prefix">~/</span>github</a></li>
+      <li><a href="https://linkedin.com/in/wagnerbocchi" target="_blank" rel="noopener noreferrer"><span class="prefix">~/</span>linkedin</a></li>
+      <li style="color:var(--text-dim);font-size:12px;padding:4px 8px;" id="nav-clock"></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════
+     MAIN
+══════════════════════════════════════ -->
+<main class="container">
+
+  <div class="term fade-in">
+    <div class="term-bar">
+      <span class="dot dot-r"></span>
+      <span class="dot dot-y"></span>
+      <span class="dot dot-g"></span>
+      <span class="term-title">wagner@bocchi: ~/blog/posts/primeiro-post.html</span>
+    </div>
+    <div class="term-body">
+
+      <!-- cat command -->
+      <div class="p-line" style="margin-top:0">
+        <span class="prompt">
+          <span class="p-u">wagner</span><span class="p-a">@</span><span class="p-h">bocchi</span><span class="p-c">:</span><span class="p-p">~/blog</span><span class="p-s">$</span>
+        </span>
+        <span class="cmd">cat <span class="cmd-file">posts/primeiro-post.html</span></span>
+      </div>
+
+      <!-- Post header -->
+      <div class="post-header">
+        <h1 class="post-h1">Olá, mundo! — por que criei este blog e o que esperar por aqui</h1>
+        <div class="post-meta">
+          <div class="pm-item">autor: <span>Wagner Bocchi</span></div>
+          <div class="pm-item">data: <span>2026-03-03</span></div>
+          <div class="pm-item">tags: <span>meta, cybersec, blog</span></div>
+          <div class="pm-item">leitura: <span>~3 min</span></div>
+        </div>
+      </div>
+
+      <!-- Post content -->
+      <article class="post-content">
+
+        <p>
+          Todo <code>hello world</code> começa com uma linha de código. Mas este começa com uma confissão:
+          criei esse blog principalmente porque cansei de perder anotações em arquivos <code>.txt</code> espalhados
+          pelo meu Arch.
+        </p>
+
+        <h2>Quem escreve aqui</h2>
+
+        <p>
+          Me chamo Wagner Bocchi. Sou um profissional de cibersegurança certificado pela Cisco como Ethical Hacker,
+          atualmente trabalhando como DevOps Engineer. Sou neurodivergente, usuário fanático de Arch Linux e
+          acredito que a melhor forma de aprender é quebrar coisas (de forma ética, claro).
+        </p>
+
+        <p>
+          Trabalho na interseção entre segurança ofensiva, DevOps e desenvolvimento em Python. Tenho background
+          em Penetration Testing, SOC/SOAR e um histórico que vai de servidor do Exército Brasileiro a piloto
+          privado — o que me ensinou que disciplina e aprendizado constante são mais valiosos que qualquer ferramenta.
+        </p>
+
+        <h2>Por que um blog no estilo terminal?</h2>
+
+        <p>
+          Porque é quem eu sou. Passo a maior parte do meu tempo em terminais, seja fazendo recon num pentest,
+          automatizando um pipeline DevOps ou debugando um script Python às 2 da manhã. O terminal é o ambiente
+          onde me sinto em casa, então nada mais natural que o blog reflita isso.
+        </p>
+
+        <p>
+          Tecnicamente: HTML, CSS e JavaScript puro, sem frameworks, sem CMS, sem dependências externas além
+          de uma fonte monospace. Hospedado no GitHub Pages. Simples, rápido, e completamente sob controle.
+        </p>
+
+        <h2>O que vou escrever</h2>
+
+        <p>Sem compromisso com frequência, mas com compromisso com honestidade. Tópicos prováveis:</p>
+
+        <ul>
+          <li><strong>Segurança ofensiva</strong> — técnicas, ferramentas, writeups de CTFs e vulnerabilidades interessantes</li>
+          <li><strong>Python e automação</strong> — scripts úteis, exploits educacionais, automação de processos</li>
+          <li><strong>DevOps e infraestrutura</strong> — GCP, Docker, pipelines, N8N e o que mais aparecer</li>
+          <li><strong>OSINT</strong> — técnicas de inteligência em fontes abertas</li>
+          <li><strong>Arch Linux e ambiente de trabalho</strong> — configurações, dotfiles, ferramentas do dia a dia</li>
+          <li><strong>Outros</strong> — sobre ser neurodivergente na área de tech, livros, aviação, cerveja artesanal</li>
+        </ul>
+
+        <h2>Como adicionar novos posts (para mim mesmo)</h2>
+
+        <p>
+          Copie este arquivo, edite o conteúdo e adicione a entrada correspondente em
+          <code>blog/index.html</code>. Sem banco de dados, sem CMS, sem complicação.
+        </p>
+
+        <pre><code># Criar novo post
+cp blog/posts/primeiro-post.html blog/posts/nome-do-post.html
+
+# Editar conteúdo
+nvim blog/posts/nome-do-post.html
+
+# Adicionar entrada no índice do blog
+nvim blog/index.html  # adicionar .post-item na lista
+
+# Deploy
+git add . && git commit -m "blog: adiciona post nome-do-post"
+git push origin main</code></pre>
+
+        <blockquote>
+          "The quieter you become, the more you are able to hear." — Kali Linux
+        </blockquote>
+
+        <p>
+          Se você chegou até aqui, obrigado pela visita. Sinta-se à vontade para me mandar uma mensagem
+          em <a href="mailto:wagner@bocchi.company">wagner@bocchi.company</a> ou pelo
+          <a href="https://linkedin.com/in/wagnerbocchi" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
+        </p>
+
+      </article>
+
+      <!-- nav between posts -->
+      <div style="margin-top:30px;padding-top:20px;border-top:1px solid var(--border);display:flex;justify-content:space-between;font-size:13px;">
+        <a href="../../blog/" class="back-link" style="margin:0">← voltar ao blog</a>
+        <span style="color:var(--text-dim)">próximo post em breve...</span>
+      </div>
+
+      <!-- trailing prompt -->
+      <div class="p-line" style="margin-top:20px">
+        <span class="prompt">
+          <span class="p-u">wagner</span><span class="p-a">@</span><span class="p-h">bocchi</span><span class="p-c">:</span><span class="p-p">~/blog</span><span class="p-s">$</span>
+        </span>
+        <span class="cursor"></span>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <span>built with ♥ by <a href="../../">Wagner Bocchi</a></span>
+  &nbsp;·&nbsp;
+  <span>hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
+  &nbsp;·&nbsp;
+  <span><a href="https://github.com/wagnerbocchi" target="_blank" rel="noopener noreferrer">view source</a></span>
+</footer>
+
+<script src="../../js/main.js"></script>
+</body>
+</html>

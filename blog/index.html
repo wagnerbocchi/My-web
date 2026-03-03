@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Blog de Wagner Bocchi — Cyber Security, DevOps, Python e o que mais vier à mente." />
+  <title>Blog | Wagner Bocchi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════ -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="../" class="nav-brand">
+      <span style="color:var(--text-dim)">~$</span> wagner@bocchi<span class="cursor" style="width:7px;height:13px;"></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../"><span class="prefix">~/</span>home</a></li>
+      <li><a href="../blog/" class="active"><span class="prefix">~/</span>blog</a></li>
+      <li><a href="https://github.com/wagnerbocchi" target="_blank" rel="noopener noreferrer"><span class="prefix">~/</span>github</a></li>
+      <li><a href="https://linkedin.com/in/wagnerbocchi" target="_blank" rel="noopener noreferrer"><span class="prefix">~/</span>linkedin</a></li>
+      <li style="color:var(--text-dim);font-size:12px;padding:4px 8px;" id="nav-clock"></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════
+     MAIN
+══════════════════════════════════════ -->
+<main class="container">
+
+  <div class="term fade-in">
+    <div class="term-bar">
+      <span class="dot dot-r"></span>
+      <span class="dot dot-y"></span>
+      <span class="dot dot-g"></span>
+      <span class="term-title">wagner@bocchi: ~/blog</span>
+    </div>
+    <div class="term-body">
+
+      <!-- ls -la posts/ -->
+      <div class="p-line" style="margin-top:0">
+        <span class="prompt">
+          <span class="p-u">wagner</span><span class="p-a">@</span><span class="p-h">bocchi</span><span class="p-c">:</span><span class="p-p">~/blog</span><span class="p-s">$</span>
+        </span>
+        <span class="cmd">ls <span class="cmd-flag">-la</span> <span class="cmd-file">posts/</span></span>
+      </div>
+
+      <div class="ls-header">total 1 | drwxr-xr-x | ordenado por data</div>
+
+      <!-- ════════════════════════════════════════
+           LISTA DE POSTS
+           Para adicionar um novo post:
+           1. Crie posts/slug-do-post.html
+           2. Copie o template de primeiro-post.html
+           3. Adicione um .post-item aqui abaixo
+      ════════════════════════════════════════ -->
+      <div class="post-list">
+
+        <a class="post-item" href="posts/primeiro-post.html">
+          <span class="pi-perms">-rw-r--r--</span>
+          <span class="pi-date">2026-03-03</span>
+          <span class="pi-title">Olá, mundo! — por que criei este blog e o que esperar por aqui</span>
+          <span class="pi-tags">
+            <span class="pi-tag">meta</span>
+            <span class="pi-tag">cybersec</span>
+          </span>
+        </a>
+
+        <!-- EXEMPLO DE COMO ADICIONAR MAIS POSTS:
+
+        <a class="post-item" href="posts/nmap-cheatsheet.html">
+          <span class="pi-perms">-rw-r--r--</span>
+          <span class="pi-date">2026-03-10</span>
+          <span class="pi-title">Nmap cheatsheet — os comandos que uso todo dia</span>
+          <span class="pi-tags">
+            <span class="pi-tag">nmap</span>
+            <span class="pi-tag">recon</span>
+          </span>
+        </a>
+
+        -->
+
+      </div>
+
+      <!-- trailing prompt -->
+      <div class="p-line">
+        <span class="prompt">
+          <span class="p-u">wagner</span><span class="p-a">@</span><span class="p-h">bocchi</span><span class="p-c">:</span><span class="p-p">~/blog</span><span class="p-s">$</span>
+        </span>
+        <span class="cursor"></span>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- cat README.md -->
+  <div class="term fade-in">
+    <div class="term-bar">
+      <span class="dot dot-r"></span>
+      <span class="dot dot-y"></span>
+      <span class="dot dot-g"></span>
+      <span class="term-title">cat README.md</span>
+    </div>
+    <div class="term-body">
+
+      <div class="p-line" style="margin-top:0">
+        <span class="prompt">
+          <span class="p-u">wagner</span><span class="p-a">@</span><span class="p-h">bocchi</span><span class="p-c">:</span><span class="p-p">~/blog</span><span class="p-s">$</span>
+        </span>
+        <span class="cmd">cat <span class="cmd-file">README.md</span></span>
+      </div>
+
+      <div style="color:var(--text);font-size:13px;line-height:1.9;margin-top:4px;">
+        <span style="color:var(--cyan)"># Blog — Wagner Bocchi</span><br><br>
+        Escrevo sobre o que me interessa: <span style="color:var(--green)">cibersegurança</span>,
+        <span style="color:var(--green)">Python</span>, <span style="color:var(--green)">DevOps</span>,
+        ferramentas que uso no dia a dia, CTFs, e às vezes sobre outras coisas da vida.<br><br>
+        <span style="color:var(--text-dim)">## Tópicos frequentes</span><br>
+        <span style="color:var(--text-dim)">▸</span> Segurança Ofensiva &amp; Pentesting<br>
+        <span style="color:var(--text-dim)">▸</span> OSINT, Recon &amp; Threat Intelligence<br>
+        <span style="color:var(--text-dim)">▸</span> Python para automação e exploits<br>
+        <span style="color:var(--text-dim)">▸</span> DevOps, Cloud e Infraestrutura<br>
+        <span style="color:var(--text-dim)">▸</span> Arch Linux &amp; ambiente de trabalho<br>
+        <span style="color:var(--text-dim)">▸</span> SOAR / SOC e defesa cibernética<br>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <span>built with ♥ by <a href="../">Wagner Bocchi</a></span>
+  &nbsp;·&nbsp;
+  <span>hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a></span>
+  &nbsp;·&nbsp;
+  <span><a href="https://github.com/wagnerbocchi" target="_blank" rel="noopener noreferrer">view source</a></span>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
